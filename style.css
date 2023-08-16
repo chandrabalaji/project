@@ -1,0 +1,583 @@
+*{
+margin: 0;
+font-family: sans-serif;
+text-transform: capitalize;
+
+
+
+}
+
+.nav{
+height: auto;
+width: 100%;
+background-color: rgb(34, 34, 165);
+display: flex;
+position: fixed;
+flex-wrap: wrap;
+z-index: 10;
+row-gap: 10px;
+
+}
+.log-image{
+
+   background-image: url(image/kerala-tourism-title.png);
+   background-repeat: no-repeat;
+   height: 80px;
+   min-width: 355px;
+   margin-left: 20px;
+   flex: 2;
+   
+}
+
+.menu{
+
+flex: 5;
+
+}
+
+
+
+
+ .menu ul{
+
+    display: flex;
+    
+place-content: center;
+}
+
+.ul a{
+color: white;
+padding: 7px;
+text-decoration: none;
+margin-right: 7px;
+font-size: 20px;
+min-width: 165px;
+}
+.menu{
+display: grid;
+place-content: center;
+
+}
+ul a:hover{
+color: white;
+border: 1px solid white;
+background-color: #32936f;
+border-radius: 20px;
+}
+
+ .main{
+
+    background-image: url(image/back.webp);
+    height:700px;
+    width: auto;
+  background-repeat: no-repeat;
+ background-size: cover;
+ display: grid;
+ color:white;
+ align-items: end;
+
+
+ 
+} 
+.content{
+pad: 10px;
+margin: 10px 20px;
+margin-bottom: 60px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 2em;
+font-weight: bolder;
+
+
+}
+.ex{
+   
+/* background-color: aqua; */
+display: grid;
+place-content: center;
+height: 100px;
+
+}
+.ex p{
+
+    color: black;
+font-size: 40px;
+font-family: sans-serif;
+}
+
+.boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    
+    
+}
+
+.box1{
+    border: 2px solid;
+    height: 500px;
+    width: 300px;
+    background-image: url(image/waterfall.jpg);
+    display: grid;
+    border-bottom:14px solid lightskyblue;
+
+}
+
+.box1 p{
+
+display: none;
+color: white;
+font-size: 25px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+height: 100%;
+
+
+
+
+
+}
+.box1:hover p{
+    display: block;
+background-color: rgba(62, 136, 210, 0.5);
+
+display: grid;
+align-items: center;
+
+color: white;
+
+}
+
+
+
+
+
+
+.box2{
+
+
+    border: 2px solid;
+    height: 500px;
+    width: 300px;
+   background-image: url(image/elephant-on-road.jpg);
+   background-size: 300px 100%;
+   border-bottom:14px solid green;
+}
+
+.box2 p{
+
+    display: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    
+    
+    
+    
+    
+    }
+    .box2:hover p{
+        display: block;
+    background-color: rgba(111, 235, 125, 0.4);
+    display: grid;
+    align-items: center;
+    text-align: justify;
+    color: white;
+    
+    }
+
+
+
+
+.box3{
+
+    border: 2px solid;
+    height: 500px;
+    width: 300px;
+background-image: url(image/mountain-top.jpg);
+background-size: 300px 100%;
+border-bottom:14px solid gray;
+}
+.box3 p{
+
+    display: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    
+    
+    
+    
+    
+    }
+    .box3:hover p{
+        display: block;
+    background-color: rgba(193, 193, 230, 0.5);
+    display: grid;
+    align-items: center;
+    text-align: justify;
+    color: white;
+    
+    }
+
+
+
+
+
+
+
+.box4{
+    border: 2px solid;
+    height: 500px;
+    width: 300px;
+    background-image: url(image/food.jpg);
+    border-bottom:14px solid sandybrown;
+}
+.box4 p{
+
+    display: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    
+    
+    
+    
+    
+    }
+    .box4:hover p{
+        display: block;
+    background-color: rgba(216, 229, 141, 0.5);
+    display: grid;
+    align-items: center;
+    text-align: justify;
+    color: white;
+    
+    }
+.find{
+
+display: grid;
+place-content: center;
+font-size: 20px;
+margin-top: 50px;
+/* border: 2px solid; */
+padding: 10px;
+
+}
+
+.find a{
+background-color: blue;
+color: white;
+text-decoration: none;
+padding: 20px;
+border-radius: 15px;
+
+}
+/* tour package- - - - - - -- - */
+.container{
+/* border: 1px solid; */
+display: grid;
+place-content: center;
+font-family: Arial, Helvetica, sans-serif;
+/* background-color: bisque; */
+width: 100%;
+background-color: lightblue;
+}
+.container h2{
+position: relative;
+left: 90px;
+margin-bottom: 10px;
+
+
+}
+
+.tour{
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+gap: 20px;
+
+/* position: relative; */
+
+background-color: lightblue;
+
+}
+
+
+.square{
+/* background-color: aqua; */
+width: 400px;
+height: 200px;
+border: 1px solid;
+border-radius: 5px;
+margin: 20px;
+}
+#a{
+
+background-image: url(image/houseboat\ -\ Copy.jpg);
+background-size:100%;
+position: relative;
+}
+#b{
+background-image: url(image/Wayanad.jpg);
+background-size:100%;
+
+position: relative;
+
+}
+#c{
+background-image: url(image/kolukkumalai-kolukkumalai.jpg);
+background-size:100%;
+position: relative;
+}
+#d{
+
+background-image: url(image/Romantic_Gateway_Package.jpg);
+position: relative;
+background-size:100%;
+}
+#e{
+background-image: url(image/winter_packge.webp);
+background-size:100%;
+position: relative;
+}
+
+#f{
+
+    background-image: url(image/adventure.jpg);
+    background-size:100%;
+    position: relative;
+
+}
+
+
+
+.rs{
+
+position: absolute;
+bottom: 10px;
+right: 20px;
+border: 2px solid;
+padding: 10px;
+font-size: 1rem;
+background-color:rgb(220, 41, 41);
+}
+
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0,.5);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+
+.square:hover .overlay{
+    height: 100%;
+}
+
+
+.square p{
+
+position: absolute;
+top: 45px;
+left: 20px;
+font-size: 1rem;
+color: white;
+font-family: cursive;
+
+
+}
+
+
+.last{
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(600px,1fr));
+gap: 20px;
+
+
+
+}
+.card-pics{
+box-shadow: 0 4px 10px rgba(0, 1px, 0,.5);
+width: 300px;
+height: 300px;
+border-radius: 5px ;
+margin: 20px;
+position: absolute;
+
+}
+.pics{
+
+position: relative;
+height: 700px;
+   width: 700px;
+   /* border: 2px solid; */
+
+
+}
+.card-pics:nth-child(1){
+left: 0%;
+top: 50%;
+
+}
+
+.card-pics:nth-child(2){
+
+
+left: 50%;
+top: 0%;
+
+}
+
+.card-pics:nth-child(3){
+
+
+ left: 30%;
+top: 30%;
+    
+}
+
+.card-pics:nth-child(4){
+
+
+ left: 50%;
+ top: 50%;
+        
+  }
+
+
+ .card-pics:nth-child(5){
+
+
+  left: 00%;
+    top: 0%;
+            
+   }
+
+    
+
+
+.card-pics:hover{
+
+transform: scale(1.1);
+transition: .7s;
+z-index: 10;
+cursor: pointer;
+
+
+}
+.para{
+position: relative;
+top: 20px;
+font-family: fantasy;
+font-size: 1rem;
+display: grid;
+text-align: justify;
+
+
+}
+
+.quote{
+display: grid;
+width: 50%;
+border: 2px solid;
+place-content: center;
+height: auto;
+padding: 20px;
+margin-top: 40px;
+box-shadow: 2px 4px 5px;
+}
+.quote input{
+padding: 10px;
+margin: 10px;
+width: 100%;
+box-shadow: 0px 2px 3px;
+
+background-color: bisque;
+
+}
+.quote button{
+
+position: relative;
+left: 13px;
+    padding: 10px;
+    color: blue;
+    margin-top: 5px;
+    font-size: 1.5rem;
+    border-radius: 9px;
+}
+
+ button:hover{
+
+background-color: blue;
+color: white;
+
+}
+
+
+
+
+.cs{
+
+
+    margin-top: 15px;
+    font-size: 1rem;
+    display: grid;
+    align-items: center;
+    
+
+}
+
+.footer{
+display: flex;
+flex-wrap: wrap;
+margin: 10px;
+background: linear-gradient(lightblue,gray);
+padding: 20px;
+
+}
+
+
+
+
+
+
+.footer div{
+flex: 1;
+font-size: 1.5rem;
+padding: 7px;
+width: 100%;
+min-width: 300px;
+}
+
+.th{
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+.copy{
+
+    display: grid;
+    place-content: center;
+    font-size: 20px;
+    
+    opacity: .9;
+}
+
+
+
+@media (max-width:800px) {
+   .pics{
+display: none;
+
+   }
+
+
+}
